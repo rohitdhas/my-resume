@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Author:
+% Rohit Dhas (http://rohitdhas.dev)
+%
+% Original repository:
+% https://github.com/rohitdhas/resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Rohit}{Dhas}{
+\href{mailto:rohitdhas666@gmail.com}{rohitdhas666@gmail.com} | +91 9359952174
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Savitribai Phule, Pune \\ University}
+\descript{Bachelor's in Computer Application}
+\location{May 2023 | Ahemadnagar, IN}
+\sectionsep
+
+\subsection{NDV High School}
+\descript{HSC (12th)}
+\location{March 2020 | Beed, IN}
+\location{ Percentage: 78 / 100}
+\descript{SSC (10th)}
+\location{March 2018 | Beed, IN}
+\location{ Percentage: 89 / 100}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/rohitdhas}{\bf rohitdhas} \\
+LinkedIn://  \href{https://www.linkedin.com/in/rohitdhas}{\bf rohitdhas} \\
+Twitter://  \href{https://twitter.com/rohitdhas_dev}{\bf @rohitdhas\_dev} \\
+Portfolio://  \href{https://rohitdhas.dev}{\bf rohitdhas.dev} \\
+HackerRank:// \href{https://www.hackerrank.com/rohitdhas?hr_r=1}{\bf rohitdhas} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Database Management System \\
+Software Engineering \\
+Data Structures \& Algorithms \\
+Operating System \\
+Cloud Computing \\
+Data Mining \\
+Machine Learning \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\textbullet{} JavaScript \\ \textbullet{}  TypeScript \\ \textbullet{} Python \\ \textbullet{} C++ \\ \textbullet{} HTML/CSS \\ \textbullet{} MongoDB \\ \textbullet{} MySQL \\ \textbullet{} React JS \\ \textbullet{} Next JS \\ \textbullet{} Express JS \\ \textbullet{} Node JS \\ \textbullet{} AWS \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{QuadB Technologies}
+\descript{| React JS Intern }
+\location{Nov 2021 – Mar 2022 | Remote}
+\vspace{\topsep}
+\begin{tightemize}
+\item Worked on Quadb's CRM project, which is a web based sales CRM.
+\item Worked on insights feature of CRM which helps analyze patterns and optimize your workflow with the help of charts.
+\item Tested and Debugged Source Code for better application
+performance with a team of 3 individuals.
+\item Tech:- React JS, Redux
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Parceldeck}
+\descript{| Full Stack Development Intern }
+\location{Apr 2022 - Sept 2022 | Remote}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Automated manual task of paying monthly COD remittances to users, by integrating Razorpay X API
+\item Built a Simple Ticket System (in which users can explain their query and add some attachments) to allow users raise a ticket for their queries. 
+% \item Built an API to upload and access product images to AWS S3
+\item Implemented Sendgrid Dynamic Template service to send emails to users on different events.
+\item Developed multiple REST APIs for tracking package details, creating new orders, managing weight discrepancies, etc.
+% \item Built Cron Jobs for automating stuff like, updating shipment tracking status,  updating failed payments, etc.
+\item Built reusable UI components using AntD and did API integration to display data in tabular form.
+\item Tech:- React JS, Antd, Redux, Nest JS, MongoDB, AWS
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Taxadda}
+\descript{| Backend Developer Intern}
+\location{Sept 2022 – Dec 2022 | Remote}
+\begin{tightemize}
+\item Worked with exceljs lib to generate and validate dynamic bulk upload sheets.
+\item Implemented search auto-complete in an API using mongodb altas search.
+\item Wrote complex database queries using MongoDB aggregation operator to access, modify and manage data in DB.
+% \item Implemented data (email \& phone) encryption for securing user data.
+\item Debugged source code and optimised performance bottlenecks in backend system to improve app performance.
+\item Tech:- Node JS, Express JS, MongoDB, Excel JS
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Code Box}
+\descript{}
+\location{}
+\begin{tightemize}
+\item Code Box is development platform where anyone can build websites using HTML, CSS and JS and show off their work online.
+\item Tech Stack - React, Next JS, Tailwind CSS, MongoDB
+\item Link - \href{https://code-box.vercel.app} {\bf code-box.vercel.app}
+\end{tightemize} 
+\sectionsep
+
+\runsubsection{StoreFront}
+\descript{}
+\location{}
+\begin{tightemize}
+\item Storefront is a E-Commerce app for buying electronic stuff.
+\item Tech Stack - React (TypeScript), Redux Toolkit, Prime React + Tailwind CSS, Next JS, MongoDB, AWS EC2 , Stripe API, Next Auth, GraphQL + Apollo Server
+\item Link - \href{https://storefront.rohitdhas.dev} {\bf storefront.rohitdhas.dev}
+\end{tightemize} 
+\sectionsep
+
+\runsubsection{TopStore REST API}
+\descript{}
+\location{}
+\begin{tightemize}
+\item It's a free REST API that provides dummy product data.
+\item Tech Stack - Node JS, Express, MongoDB
+\item Link - \href{https://topstore-api.herokuapp.com} {\bf topstore-api.herokuapp.com}
+\end{tightemize} 
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
