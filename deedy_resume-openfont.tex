@@ -75,7 +75,14 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.31\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ABOUT ME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{About Me}
+
+% \descript{I'm a software engineer based in Maharashtra, India with 1 years of experience in the software industry.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -129,7 +136,23 @@ Machine Learning \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\textbullet{} JavaScript \\ \textbullet{}  TypeScript \\ \textbullet{} Python \\ \textbullet{} C++ \\ \textbullet{} HTML/CSS \\ \textbullet{} MongoDB \\ \textbullet{} MySQL \\ \textbullet{} React JS \\ \textbullet{} Next JS \\ \textbullet{} Express JS \\ \textbullet{} Node JS \\ \textbullet{} AWS \\
+\textbullet{} HTML/CSS \textbullet{}  JavaScript \textbullet{} TypeScript 
+ \textbullet{} React JS \textbullet{} Angular \textbullet{} Python\\ \textbullet{} MongoDB \textbullet{} PostgreSQL \textbullet{} Next JS \\ \textbullet{} Express JS \textbullet{} Node JS \textbullet{} AWS
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\textbullet{}  \descript{Twist UI |   \href{https://twistui.rohitdhas.dev}{\bf Link}}
+{\normalsize A React Component Library} \\
+\textbullet{} \descript{Helix DB |   \href{https://github.com/rohitdhas/helix-db}{\bf Link}}
+{\normalsize A Simple NoSQL DB written in TypeScript} \\
+\textbullet{} \descript{TopStore API |   \href{https://topstore.rohitdhas.dev}{\bf Link}}
+{\normalsize A free REST API, which provides dummy product data} \\
+\textbullet{} \descript{Storefront |   \href{https://storefront.rohitdhas.dev/}{\bf Link}}
+{\normalsize An E-Commerce web app for buying electronics} \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,11 +176,11 @@ Machine Learning \\
 \location{Nov 2021 – Mar 2022 | Remote}
 \vspace{\topsep}
 \begin{tightemize}
-\item Worked on Quadb's CRM project, which is a web based sales CRM.
-\item Worked on insights feature of CRM which helps analyze patterns and optimize your workflow with the help of charts.
-\item Tested and Debugged Source Code for better application
-performance with a team of 3 individuals.
-\item Tech:- React JS, Redux
+\item Worked on Quadb's web based sales CRM project.
+\item Streamlined the insights feature of the CRM by integrating data visualization libraries, such as chart.js, to provide comprehensive charts and graphs, enabling users to gain valuable insights at a glance.
+\item Conducted thorough testing and debugging of the CRM source code, resulting in enhanced performance and increased stability of the application.
+\item Collaborated with the QA team to identify and resolve critical bugs and usability issues, ensuring a smooth user experience for clients.
+\item Tech:- React JS, Redux, Chart.js, PostgreSQL
 \end{tightemize}
 \sectionsep
 
@@ -166,27 +189,36 @@ performance with a team of 3 individuals.
 \location{Apr 2022 - Sept 2022 | Remote}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Automated manual task of paying monthly COD remittances to users, by integrating Razorpay X API
-\item Built a Simple Ticket System (in which users can explain their query and add some attachments) to allow users raise a ticket for their queries. 
-% \item Built an API to upload and access product images to AWS S3
-\item Implemented Sendgrid Dynamic Template service to send emails to users on different events.
-\item Developed multiple REST APIs for tracking package details, creating new orders, managing weight discrepancies, etc.
-% \item Built Cron Jobs for automating stuff like, updating shipment tracking status,  updating failed payments, etc.
-\item Built reusable UI components using AntD and did API integration to display data in tabular form.
-\item Tech:- React JS, Antd, Redux, Nest JS, MongoDB, AWS
+\item Automated the manual task of paying monthly COD remittances to users by integrating the Razorpay X API
+\item Built a ticket system that allows users to raise a ticket for their queries by explaining their query and adding attachments
+\item Developed an invoice generator service capable of generating monthly invoice PDFs and seamlessly delivering them to users
+\item Implemented Sendgrid's Dynamic Template service to send real-time shipment update emails to users
+\item Implemented Cron Jobs to automate crucial tasks, including updating shipment tracking statuses and handling failed payments
+\item Optimized existing React codebase by implementing code splitting techniques, resulting in a significant reduction in the initial page load time
+\item Tech:- React JS, Antd, Redux, Nest JS, MongoDB, Redis, AWS
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Taxadda}
 \descript{| Backend Developer Intern}
-\location{Sept 2022 – Dec 2022 | Remote}
+\location{Sept 2022 – Jan 2023 | Remote}
 \begin{tightemize}
-\item Worked with exceljs lib to generate and validate dynamic bulk upload sheets.
-\item Implemented search auto-complete in an API using mongodb altas search.
-\item Wrote complex database queries using MongoDB aggregation operator to access, modify and manage data in DB.
-% \item Implemented data (email \& phone) encryption for securing user data.
+\item Utilized the exceljs library to generate and validate dynamic bulk upload sheets
+\item Leveraged MongoDB Atlas Search to incorporate search auto-complete functionality into an API, delivering real-time suggestions and enhancing the user search experience
+\item Wrote advanced database queries using MongoDB’s aggregation operator, enabling efficient access, modification and management of data within the system
 \item Debugged source code and optimised performance bottlenecks in backend system to improve app performance.
-\item Tech:- Node JS, Express JS, MongoDB, Excel JS
+\item Tech:- Node JS, Express JS, MongoDB, Excel JS, AWS
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Fyle}
+\descript{| Frontend Engineering Intern}
+\location{Feb 2023 – April 2023 | Remote}
+\begin{tightemize}
+\item Led the initiative to deprecate the underutilized MIS reports page, collaborating with cross-functional teams including product, sales, and marketing.
+\item Successfully addressed and resolved 2 service requests, ensuring customer satisfaction and timely resolution.
+\item Implemented comprehensive unit tests using Jest for newly developed Angular components, attaining a remarkable 100\% code coverage.
+\item Tech:- Angular, Angular JS, Ionic, PostgreSQL, Mixpanel, Github
 \end{tightemize}
 \sectionsep
 
@@ -194,36 +226,27 @@ performance with a team of 3 individuals.
 %     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects}
-\runsubsection{Code Box}
-\descript{}
-\location{}
-\begin{tightemize}
-\item Code Box is development platform where anyone can build websites using HTML, CSS and JS and show off their work online.
-\item Tech Stack - React, Next JS, Tailwind CSS, MongoDB
-\item Link - \href{https://code-box.vercel.app} {\bf code-box.vercel.app}
-\end{tightemize} 
-\sectionsep
+% \section{Projects}
 
-\runsubsection{StoreFront}
-\descript{}
-\location{}
-\begin{tightemize}
-\item Storefront is a E-Commerce app for buying electronic stuff.
-\item Tech Stack - React (TypeScript), Redux Toolkit, Prime React + Tailwind CSS, Next JS, MongoDB, AWS EC2 , Stripe API, Next Auth, GraphQL + Apollo Server
-\item Link - \href{https://storefront.rohitdhas.dev} {\bf storefront.rohitdhas.dev}
-\end{tightemize} 
-\sectionsep
+% \runsubsection{Twist UI}
+% \descript{}
+% \location{}
+% \begin{tightemize}
+% \item Twist UI is a simple component library for building react apps faster.
+% \item Tech Stack - TypeScript, Tailwind, TSDX, Storybook
+% \item Link - \href{https://twistui.rohitdhas.dev} {\bf twistui.rohitdhas.dev}
+% \end{tightemize} 
+% \sectionsep
 
-\runsubsection{TopStore REST API}
-\descript{}
-\location{}
-\begin{tightemize}
-\item It's a free REST API that provides dummy product data.
-\item Tech Stack - Node JS, Express, MongoDB
-\item Link - \href{https://topstore-api.herokuapp.com} {\bf topstore-api.herokuapp.com}
-\end{tightemize} 
-\sectionsep
+% \runsubsection{StoreFront}
+% \descript{}
+% \location{}
+% \begin{tightemize}
+% \item An E-Commerce app for buying electronics.
+% \item Tech Stack - React (TypeScript), Redux Toolkit, Prime React + Tailwind CSS, Next JS, MongoDB, AWS EC2 , Stripe API, Next Auth, GraphQL + Apollo Server
+% \item Link - \href{https://storefront.rohitdhas.dev} {\bf storefront.rohitdhas.dev}
+% \end{tightemize} 
+% \sectionsep
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
